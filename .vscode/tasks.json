@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-std=c++11",
+                "PA4.cpp",
+                "GameCommands.cpp",
+                "CartPoint.cpp",
+                "CartVector.cpp",
+                "Cave.cpp",
+                "CoralReef.cpp",
+                "Fish.cpp",
+                "GameObject.cpp",
+                "Model.cpp",
+                "Shark.cpp",
+                "Sharknado.cpp",
+                "Tuna.cpp",
+                "View.cpp",
+                "-o",
+                "PA4"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+     
+    ]
+}
