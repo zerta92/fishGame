@@ -2,13 +2,14 @@
 #define Cave_H
 
 #include <iostream>
-//#include <cmath>
-#include "GameObject.h"
-#include "Fish.h"
+// #include <cmath>
+#include "../Game/GameObject.h"
+#include "../Fish/Fish.h"
 
 class Fish;
 
-class Cave : public GameObject{
+class Cave : public GameObject
+{
 
 private:
 	double space;
@@ -18,10 +19,9 @@ protected:
 	char state;
 
 public:
-
 	bool hide_fish(Fish *fish_to_hide);
 
-	bool release_fish(Fish*fish_to_release);
+	bool release_fish(Fish *fish_to_release);
 
 	bool update();
 
@@ -33,16 +33,7 @@ public:
 
 	double get_space();
 
-
-	//void save(std::ofstream& file);
-
-	
-
-
+	// void save(std::ofstream& file);
 };
 
-
-
-
 #endif
-

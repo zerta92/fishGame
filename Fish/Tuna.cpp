@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Tuna.h"
-#include "CartPoint.h"
-#include "Model.h"
+#include "../Coordinates/CartPoint.h"
+#include "../Model.h"
 
 using namespace std;
 // update for inherited classes fish/shark
@@ -18,8 +18,6 @@ Tuna::Tuna(int id, Cave *home, Model *world) : Fish('T', id, home, 10, world)
 	this->reef = NULL;
 	this->time = 0;
 	this->initiator = false;
-
-	// cout << "Tuna constructed" << endl;
 }
 // 10
 Tuna::Tuna() : Fish('T', 10, world)
@@ -35,8 +33,6 @@ Tuna::Tuna() : Fish('T', 10, world)
 	this->reef = NULL;
 	this->home = NULL;
 	this->initiator = false;
-
-	// cout << "Tuna default constructed" << endl;
 }
 
 double Tuna::get_speed()

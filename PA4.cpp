@@ -1,10 +1,10 @@
 #include <iostream>
-#include "GameCommands.h"
-#include "CartPoint.h"
-#include "CartVector.h"
+#include "./Game/GameCommands.h"
+#include "./Coordinates/CartPoint.h"
+#include "./Coordinates/CartVector.h"
 #include "View.h"
 #include "InputHandling.h"
-#include "Sharknado.h"
+#include "Sharknado/Sharknado.h"
 
 using namespace std;
 

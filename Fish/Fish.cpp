@@ -2,8 +2,8 @@
 
 #include "Fish.h"
 
-#include "CartPoint.h"
-#include "Model.h"
+#include "../Coordinates/CartPoint.h"
+#include "../Model.h"
 
 using namespace std;
 

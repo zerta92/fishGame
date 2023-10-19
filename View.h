@@ -1,15 +1,12 @@
 #ifndef VIEW_H
 #define VIEW_H
 
-/*
-#include "GameCommand.h"
-*/
-#include "Model.h"///////////////////////////
+#include "Model.h" ///////////////////////////
 
 const int view_maxsize = 20;
 
-class View{
-
+class View
+{
 
 private:
 	int size;
@@ -27,11 +24,9 @@ public:
 
 	void clear();
 
-	void plot(GameObject* ptr);
+	void plot(GameObject *ptr);
 
 	void draw();
-
-
 };
 
 #endif

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Cave.h"
-#include "Fish.h"
+#include "../Fish/Fish.h"
 
 using namespace std;
 static int caves = 1;

@@ -1,20 +1,20 @@
 #ifndef Fish_H
 #define Fish_H
 
-
 #include <iostream>
-#include "CartPoint.h"
-#include "CartVector.h"
-#include "CoralReef.h"
-#include "GameObject.h"
-#include "Cave.h"
+#include "../Coordinates/CartPoint.h"
+#include "../Coordinates/CartVector.h"
+#include "../Reef/CoralReef.h"
+#include "../Game/GameObject.h"
+#include "../Cave/Cave.h"
 #include <cmath>
-//#include "Model.h"
+// #include "Model.h"
 
 class Cave;
 class Model;
 
-class Fish : public GameObject{
+class Fish : public GameObject
+{
 
 private:
 	double energy;
@@ -27,9 +27,9 @@ private:
 
 	CartVector delta;
 
-	CoralReef* reef;
+	CoralReef *reef;
 
-	Cave* home;
+	Cave *home;
 
 	bool update_location();
 
@@ -38,15 +38,14 @@ private:
 protected:
 	char display_code;
 	char state;
-	Model* world;
+	Model *world;
+
 public:
+	Fish(char display_code, int size, Model *world);
 
+	Fish(char display_code, int in_id, Cave *home, int size, Model *world);
 
-	Fish(char display_code, int size, Model* world);
-
-	Fish(char display_code, int in_id, Cave* home, int size, Model *world);
-
-	Fish(char display_code, int in_id, CartPoint p1, int size, Model*world);
+	Fish(char display_code, int in_id, CartPoint p1, int size, Model *world);
 
 	~Fish();
 
@@ -54,7 +53,7 @@ public:
 
 	bool update();
 
-	void start_hiding(Cave* destCave);
+	void start_hiding(Cave *destCave);
 
 	virtual double get_speed() = 0;
 
@@ -68,27 +67,21 @@ public:
 
 	bool is_hidden();
 
-	virtual void start_attack(Fish*);
+	virtual void start_attack(Fish *);
 
-	virtual void start_mating(Fish*);
+	virtual void start_mating(Fish *);
 
 	void get_bitten(int attack_strength);
 
 	bool is_alive();
 
-	Cave* get_cave();
+	Cave *get_cave();
 
 	char get_display();
 
 	char get_state();
 
-	//void save(std::ofstream& file);
-
+	// void save(std::ofstream& file);
 };
 
 #endif
-
-
-
-
-
