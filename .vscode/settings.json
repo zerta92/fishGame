@@ -1,7 +1,8 @@
 {
-    "files.associations": {
-        "*.ejs": "html",
-        "*.ts": "typescript",
-        "iostream": "cpp"
-    }
+  "files.associations": {
+    "*.ejs": "html",
+    "*.ts": "typescript",
+    "iostream": "cpp",
+    "list": "cpp"
+  }
 }
