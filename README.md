@@ -21,9 +21,9 @@ Make sure you have the following tools installed on your system:
    ```bash
    cd /path/to/project
 
-   <!-- If you have a Makefile: -->
+   ##If you have a Makefile:
     make
-   <!-- If you are using a custom build command -->
+   ##If you are using a custom build command
     g++ -g -std=c++11 PA4.cpp GameCommands.cpp CartPoint.cpp CartVector.cpp Cave.cpp CoralReef.cpp Fish.cpp GameObject.cpp Model.cpp Shark.cpp Sharknado.cpp Tuna.cpp View.cpp -o PA4
     ```
 
