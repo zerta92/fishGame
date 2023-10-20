@@ -15,7 +15,7 @@ Make sure you have the following tools installed on your system:
 ### Building the Project
 
 1. **Open a Terminal:**
-    If you're using Visual Studio Code, open the integrated terminal (View > Terminal or `Ctrl` + `backtick`).
+    -If you're using Visual Studio Code, open the integrated terminal (View > Terminal or `Ctrl` + `backtick`).
 
 2. **Navigate to the Project Directory:**
    ```bash
