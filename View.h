@@ -1,7 +1,7 @@
 #ifndef VIEW_H
 #define VIEW_H
 
-#include "Model.h" ///////////////////////////
+#include "Model.h"
 
 const int view_maxsize = 20;
 
@@ -9,24 +9,24 @@ class View
 {
 
 private:
-	int size;
+    int size;
 
-	double scale;
+    double scale;
 
-	CartPoint origin;
+    CartPoint origin;
 
-	char grid[view_maxsize][view_maxsize][2];
+    char grid[view_maxsize][view_maxsize][2];
 
-	bool get_subscripts(int &ix, int &iy, CartPoint location);
+    bool get_subscripts(int &ix, int &iy, CartPoint location);
 
 public:
-	View();
+    View();
 
-	void clear();
+    void clear();
 
-	void plot(GameObject *ptr);
+    void plot(GameObject *ptr);
 
-	void draw();
+    void draw();
 };
 
 #endif
