@@ -35,9 +35,9 @@ Make sure you have the following tools installed on your system:
 ```bash
 cd /path/to/project
 ```
-   3. **Navigate to the Executable Directory:**
+   3. **Run excutable:**
 ```bash
-   ./PA4
+   ./main
 ```
 
   

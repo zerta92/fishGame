@@ -8,7 +8,7 @@
             "args": [
                 "-g",
                 "-std=c++11",
-                "PA4.cpp",
+                "main.cpp",
                 "./Game/GameCommands.cpp",
                 "./Coordinates/CartPoint.cpp",
                 "./Coordinates/CartVector.cpp",
@@ -22,7 +22,7 @@
                 "./Fish/Tuna.cpp",
                 "View.cpp",
                 "-o",
-                "PA4"
+                "main"
             ],
             "group": {
                 "kind": "build",
